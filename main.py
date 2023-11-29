@@ -178,7 +178,7 @@ def main_worker(local_rank, nprocs, args):
         if args.local_rank == 0 and is_best:
             save_checkpoint(model, args, epoch)
 
-    if args.local_rank == 0:#
+    if args.local_rank == 0:#1
         if args.stage == 1:
             print('Best Mae: {0}'.format(best_mae))
         else:
