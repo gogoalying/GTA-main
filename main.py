@@ -179,7 +179,7 @@ def main_worker(local_rank, nprocs, args):
             save_checkpoint(model, args, epoch)
 
     if args.local_rank == 0:
-        if args.stage == 1:
+        if args.stage == 1:#1
             print('Best Mae: {0}'.format(best_mae))
         else:
             print('Best Score: {0}'.format(best_score))
